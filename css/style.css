@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: 0.5s;
+    /*wfectos de cambio de 5 segundos*/
+    &.toggleBlanco{
+        background-color: antiquewhite;
+    
+    /*interpreta que es una clase agregada el &.*/
+    }
+
+}
+
+
+#toggle {
+    height: 160px;
+    width: 320px;
+    background: black;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                /*desde el eje x no hay sombra*/
+                inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                /*con una sombra mas pequeña de 8px*/
+                inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+                /*sombra desde el eje y de -4px */
+    position: relative;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    appearance: none;
+    border-radius: 10px;
+    &.toggleBlanco{
+        background-color: antiquewhite; 
+        box-shadow:   inset 0 8px 60px rgba(0, 0, 0, 0.1),
+        /*desde el eje x no hay sombra*/
+        inset 0 8px 8px rgba(0, 0, 0, 0.1),
+        /*con una sombra mas pequeña de 8px*/
+        inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+        /*sombra desde el eje y de -4px */
+    .circulo{
+        left: 160px;
+        box-shadow: 0 8px 10px rgba(0, 0, 0.1);
+        box-shadow:   inset 0 8px 60px rgba(0, 0, 0, 0.1),
+        /*desde el eje x no hay sombra*/
+        inset 0 8px 8px rgba(236, 232, 232, 1),
+        /*con una sombra mas pequeña de 8px*/
+        inset 0 -4px 4px rgba(236, 226, 226, 1);
+        /*sombra desde el eje y de -4px */
+
+    }
+
+    }
+}
+.circulo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 160px;
+    height: 160px;
+    content: "";
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50vh;
+    transform: scale(0.9);
+    transition: 0.5s; /* Añadido "s" al valor de la propiedad */
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                4px 4px rgba(255, 255, 255, 0.2) inset, /* Cambiado el orden de la sintaxis para la sombra interna */
+                -4px 4px rgba(255, 255, 255, 0.2) inset; /* Cambiado el orden de la sintaxis para la sombra interna */
+}
+
+
+
